@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<androidintentsdsl:IntentsCollection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:androidintentsdsl="http://androidintentsdsl/1.0" xsi:schemaLocation="http://androidintentsdsl/1.0 AndroidIntentsDsl.ecore">
+  <availableIntents>
+    <action/>
+  </availableIntents>
+</androidintentsdsl:IntentsCollection>
