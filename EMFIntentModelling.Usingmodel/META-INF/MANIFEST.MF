@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Usingmodel
+Bundle-SymbolicName: EMFIntentModelling.Usingmodel; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: emfintentmodelling.usingmodel.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;bundle-version="2.8.3",
+ EMFIntentModelling;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.core.resources,
+ org.eclipse.jface.text,
+ org.eclipse.ui,
+ org.eclipse.ui.texteditor,
+ org.jdom;version="1.1.1",
+ org.jdom.input;version="1.1.1",
+ org.jdom.output;version="1.1.1"
