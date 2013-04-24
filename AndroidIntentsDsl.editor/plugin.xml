@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="androidintentsdsl.presentation.AndroidintentsdslModelWizardID"
+            name="%_UI_AndroidintentsdslModelWizard_label"
+            class="androidintentsdsl.presentation.AndroidintentsdslModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AndroidintentsdslModelFile.gif">
+         <description>%_UI_AndroidintentsdslModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="androidintentsdsl.presentation.AndroidintentsdslEditorID"
+            name="%_UI_AndroidintentsdslEditor_label"
+            icon="icons/full/obj16/AndroidintentsdslModelFile.gif"
+            extensions="androidintentsdsl"
+            class="androidintentsdsl.presentation.AndroidintentsdslEditor"
+            contributorClass="androidintentsdsl.presentation.AndroidintentsdslActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
