@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/AndroidIntentsDsl/src" modelPluginID="AndroidIntentsDsl"
+    modelName="AndroidIntentsDsl" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false">
+  <foreignModel>AndroidIntentsDsl.ecore</foreignModel>
+  <genPackages prefix="Androidintentsdsl" disposableProviderFactory="true" ecorePackage="AndroidIntentsDsl.ecore#/">
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//Extra">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Extra/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Extra/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Extra/valueType"/>
+    </genClasses>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//Action">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Action/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Action/availableProtocols"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Action/permissions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Action/data"/>
+    </genClasses>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//Intent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Intent/action"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Intent/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Intent/exceptionThrown"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Intent/availableExtras"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Intent/selectedExtras"/>
+    </genClasses>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//IntentsCollection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//IntentsCollection/availableIntents"/>
+    </genClasses>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//Exception"/>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//Protocol">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Protocol/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Protocol/value"/>
+    </genClasses>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Data/parameter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference AndroidIntentsDsl.ecore#//Data/protocol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//Data/mimeType"/>
+    </genClasses>
+    <genClasses ecoreClass="AndroidIntentsDsl.ecore#//UsesPermission">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//UsesPermission/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AndroidIntentsDsl.ecore#//UsesPermission/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
