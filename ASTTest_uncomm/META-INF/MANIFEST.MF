@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ASTTest
+Bundle-SymbolicName: ASTTest; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: asttest.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jdt.ui
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.jdt.core,
+ org.eclipse.jdt.core.dom,
+ org.eclipse.jdt.core.dom.rewrite,
+ org.eclipse.jdt.internal.ui,
+ org.eclipse.jface.text,
+ org.eclipse.text.edits,
+ org.eclipse.ui.part,
+ org.eclipse.ui.texteditor
