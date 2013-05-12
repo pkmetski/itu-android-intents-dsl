@@ -184,8 +184,8 @@ public class XmlReader {
 
 				// get user input for parameter
 				inputValue = JOptionPane
-						.showInputDialog("Enter protocol parameter for "
-								+ p.getName());
+						.showInputDialog("Enter parameter for "
+								+ p.getValue());
 				if (inputValue != "") {
 					// set the selected protocol and the parameter with the user
 					// input

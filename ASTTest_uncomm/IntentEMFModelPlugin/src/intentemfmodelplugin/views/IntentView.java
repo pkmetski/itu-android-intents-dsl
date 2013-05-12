@@ -278,14 +278,20 @@ public class IntentView extends ViewPart {
 						a.setLeftHandSide(vde);
 
 						MethodInvocation methodInvocation = ast.newMethodInvocation();
-						methodInvocation.setExpression(ast.newSimpleName(uriName));
+						methodInvocation.setExpression(ast.newSimpleName(uriClass));
 						methodInvocation.setName(ast.newSimpleName("parse"));
 						StringLiteral strLit = ast.newStringLiteral();
 						strLit.setLiteralValue(intent.getAction().getData().getProtocol().getValue() + intent.getAction().getData().getParameter());
 						methodInvocation.arguments().add(strLit);
 						a.setRightHandSide(methodInvocation);
 						code.statements().add(ast.newExpressionStatement(a));
-						actionParams.put(uriName, Integer.class);
+						
+						// setData
+						Map<String, Class<?>> dataParams = new LinkedHashMap<String, Class<?>>();
+						dataParams.put(uriName, Integer.class);
+						
+						Statement dataStatm = generateMethodInvocationCode(ast, intentName, "setData", dataParams);
+						code.statements().add(dataStatm);
 					}
 					Statement actionStatm = generateMethodInvocationCode(ast, intentName, "setAction", actionParams);
 					code.statements().add(actionStatm);
