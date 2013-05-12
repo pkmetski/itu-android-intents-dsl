@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IntentEMFModelPlugin
+Bundle-SymbolicName: IntentEMFModelPlugin; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: intentemfmodelplugin.Activator
+Bundle-Vendor: IT University Copenhagen 2013
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ IntentEMFModel;bundle-version="1.0.0",
+ org.eclipse.emf;bundle-version="2.6.0",
+ org.jdom;bundle-version="1.1.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.jdt.core,
+ org.eclipse.jdt.core.dom,
+ org.eclipse.jdt.core.dom.rewrite,
+ org.eclipse.jdt.internal.corext.dom,
+ org.eclipse.jdt.ui,
+ org.eclipse.jface.text,
+ org.eclipse.text.edits,
+ org.eclipse.ui,
+ org.eclipse.ui.part,
+ org.eclipse.ui.texteditor
